@@ -1,4 +1,7 @@
-
+a {
+  width: calc(50% - 2em);
+  transition: transform 1s
+}
 
 @font-face {
     font-family:'Montserrat'; /* Имя шрифта */

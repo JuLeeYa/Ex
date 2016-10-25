@@ -37,7 +37,10 @@ q {
 
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0; }a {
+  width: calc(50% - 2em);
+  transition: transform 1s
+}
 
 @font-face {
     font-family:'Montserrat'; /* Имя шрифта */
@@ -1302,59 +1305,59 @@ footer{
 }
 
     /* clearfix */
-    .grid:after {
-      content: '';
-      display: block;
-      clear: both; 
-    }
-
-    .grid-img{
-     background-color: #eee;
-   }
-   .grid-item {
-    display: block;
-    float: left;
-    width: 31%;
-    height: 308px;
-    margin: 1% 1%;
-    box-sizing: border-box;
-    border-color: rgba(0, 0, 0, 0.5);
-    border-radius: 5px; 
-    overflow: hidden;
-  }
-  .grid-item--width2{
-   width: 64%;
- }
-
- .grid-text{
+.grid:after {
+  content: '';
   display: block;
-  position: absolute;
-  width: 84%;
-  margin: auto;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  color: #fff;
-  font-family: "Montserrat";
-  font-size: 22px;
-  font-weight: bold;
+  clear: both; 
+}
 
+.grid-img{
+   background-color: #eee;
 }
-.grid-sizer div p,
-.grid-item div p {
-  text-align: center; 
+.grid-item {
+  display: block;
+  float: left;
+  width: 31%;
+  height: 308px;
+  margin: 1% 1%;
+  box-sizing: border-box;
+  border-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px; 
+  overflow: hidden;
 }
-.search{
- position: relative;
- max-width: 516px;
- margin: 39px auto 0;
- text-align: center;
- height: 256px;
- display: block;
-}
-.search_header{
+ .grid-item--width2{
+   width: 64%;
+  }
+
+  .grid-text{
+    display: block;
+    position: absolute;
+    width: 84%;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: "Montserrat";
+    font-size: 22px;
+    font-weight: bold;
+
+  }
+  .grid-sizer div p,
+  .grid-item div p {
+    text-align: center; 
+  }
+  .search{
+   position: relative;
+   max-width: 516px;
+   margin: 39px auto 0;
+   text-align: center;
+   height: 256px;
+   display: block;
+ }
+ .search_header{
   margin-top: 9px;
   margin-bottom: 15px;
   font-size: 22px;

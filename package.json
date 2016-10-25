@@ -1,0 +1,27 @@
+{
+  "name": "exam",
+  "version": "0.4.1",
+  "description": "exam",
+  "main": "gruntfile.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "YuLeeYa"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "imagesloaded": "^4.1.1",
+    "isotope-layout": "^3.0.1"
+  },
+  "dependencies": {
+    "masonry-layout": "^4.1.1"
+  }
+}
