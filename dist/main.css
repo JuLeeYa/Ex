@@ -79,8 +79,13 @@ table {
   .header__log {
     margin-left: -20px; }
 
-  .header__log:hover,
-  .header__sign:hover {
+  .header__sign {
+    padding: 7px 16px;
+    border: 2px solid #fff;
+    border-collapse: collapse;
+    border-radius: 25px; }
+
+  .header__log:hover {
     padding: 7px 16px;
     border: 2px solid #fff;
     border-collapse: collapse;
@@ -96,8 +101,8 @@ table {
     font-size: 20px; }
 
   .logo-link {
-    letter-spacing: 0.7px;
     padding-left: 17px;
+    letter-spacing: 0.7px;
     text-decoration: none;
     color: #fff; }
 
@@ -119,12 +124,11 @@ table {
     line-height: 22px; }
 
   .promo__search {
+    display: block;
     width: 280px;
+    margin: 8px auto 0;
     padding: 10px 0px;
     background-color: #ff4e50;
-    display: block;
-    margin: 0 auto;
-    margin-top: 8px;
     border-radius: 18px; }
 
   .promo__search-link {
@@ -141,8 +145,8 @@ table {
 
   .sliders {
     max-width: 300px;
-    margin: 0 auto;
-    height: 745px; }
+    height: 745px;
+    margin: 0 auto; }
 
   .image1 {
     max-width: 100%;
@@ -395,11 +399,11 @@ table {
     font: 100% "Montserrat", sans-serif; }
 
   .content__link {
+    padding: 4px 14px;
     font-size: 10px;
     color: #fff;
     letter-spacing: 2px;
     text-decoration: none;
-    padding: 4px 14px;
     background-color: #ff4e50;
     border-radius: 21px;
     z-index: 99; }
@@ -417,46 +421,47 @@ table {
     line-height: 17px; }
 
   .partners {
-    text-align: center;
     max-width: 300px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    text-align: center; }
     .partners a {
       display: block;
       text-decoration: none; }
 
   .partners__header {
     margin-top: 32px;
+    margin-left: -6px;
     font-size: 22px;
     font-family: "Montserrat";
     font-weight: bold;
     line-height: 1.2; }
 
   .partner1 {
-    position: relative;
-    margin: 16px auto;
     display: block;
     width: 123px;
     height: 123px;
+    position: relative;
+    margin: 16px auto;
     background: url("../img/faces.png") 0 0 no-repeat;
     border-radius: 50%; }
     .partner1 .ellipse {
+      position: absolute;
       display: block;
       width: 42px;
       height: 39px;
       background: url("../img/circles.png") 0 -39px no-repeat;
-      position: absolute;
       left: 86px;
       top: 85px;
       z-index: 99; }
 
   .partner2 {
-    position: relative;
-    margin: 16px auto;
     display: block;
     width: 123px;
     height: 123px;
+    position: relative;
+    margin: 16px auto;
     border-radius: 50%;
-    background: url("../img/faces.png")-128px 0 no-repeat; }
+    background: url("../img/faces.png") -128px 0 no-repeat; }
     .partner2 .ellipse {
       display: block;
       width: 42px;
@@ -468,13 +473,13 @@ table {
       background: url("../img/circles.png") 0 0 no-repeat; }
 
   .partner3 {
-    position: relative;
-    margin: 16px auto;
     display: block;
     width: 123px;
     height: 123px;
+    position: relative;
+    margin: 16px auto;
     border-radius: 50%;
-    background: url("../img/faces.png")-257px 0 no-repeat; }
+    background: url("../img/faces.png") -257px 0 no-repeat; }
     .partner3 .ellipse {
       display: block;
       width: 42px;
@@ -486,11 +491,11 @@ table {
       background: url("../img/circles.png") 0 -120px no-repeat; }
 
   .partner4 {
-    position: relative;
-    margin: 16px auto;
     display: block;
     width: 123px;
     height: 123px;
+    position: relative;
+    margin: 16px auto;
     border-radius: 50%;
     background: url("../img/faces.png") -391px 0 no-repeat; }
     .partner4 .ellipse {
@@ -516,11 +521,10 @@ table {
     color: #666666;
     line-height: 16px; }
 
-  .other-partners {
-    margin-top: 40px; }
-
   .other-partners__link {
-    padding: 3% 24%;
+    max-width: 276px;
+    margin: 0 auto;
+    padding: 3% 0;
     text-decoration: none;
     font-size: 14px;
     font-family: "Montserrat";
@@ -531,8 +535,7 @@ table {
 
   .ideas {
     text-align: center;
-    margin: 0 auto;
-    margin-top: 47px; }
+    margin: 37px auto 0; }
 
   .ideas_header {
     margin-top: 30px;
@@ -677,6 +680,9 @@ table {
     font-family: "Roboto";
     color: #666666;
     line-height: 1.714; }
+    .footer_item a {
+      text-decoration: none;
+      color: #666666; }
 
   .footer_partners a {
     text-decoration: none;
@@ -722,8 +728,13 @@ table {
   .header__log {
     margin-left: -20px; }
 
-  .header__log:hover,
-  .header__sign:hover {
+  .header__sign {
+    padding: 7px 16px;
+    border: 2px solid #fff;
+    border-collapse: collapse;
+    border-radius: 25px; }
+
+  .header__log:hover {
     padding: 7px 16px;
     border: 2px solid #fff;
     border-collapse: collapse;
@@ -739,8 +750,8 @@ table {
     font-size: 20px; }
 
   .logo-link {
-    letter-spacing: 0.7px;
     padding-left: 17px;
+    letter-spacing: 0.7px;
     text-decoration: none;
     color: #fff; }
 
@@ -764,11 +775,11 @@ table {
 
   .promo__search {
     width: 224px;
+    display: block;
+    margin: 0 auto;
     margin-top: 30px;
     padding: 10px 0px;
     background-color: #ff4e50;
-    display: block;
-    margin: 0 auto;
     border-radius: 18px; }
 
   .promo__search-link {
@@ -1076,16 +1087,16 @@ table {
     line-height: 28px; }
 
   .content__text {
+    padding-top: 12px;
     font-size: 14px;
     font-family: "Roboto";
-    padding-top: 12px;
     line-height: 17px; }
 
   .partners {
     position: relative;
     max-width: 516px;
     display: inline-block;
-    margin: 70px auto 0;
+    margin: 73px auto 0;
     text-align: center; }
     .partners a {
       text-decoration: none; }
@@ -1125,12 +1136,12 @@ table {
       background: url("../img/circles.png") 0 -39px no-repeat; }
 
   .partner2 {
-    background: url("../img/faces.png")-128px 0 no-repeat; }
+    background: url("../img/faces.png") -128px 0 no-repeat; }
     .partner2 .ellipse {
       background: url("../img/circles.png") 0 0 no-repeat; }
 
   .partner3 {
-    background: url("../img/faces.png")-257px 0 no-repeat; }
+    background: url("../img/faces.png") -257px 0 no-repeat; }
     .partner3 .ellipse {
       background: url("../img/circles.png") 0 -120px no-repeat; }
 
@@ -1175,7 +1186,7 @@ table {
   .ideas {
     max-width: 760px;
     text-align: center;
-    margin: 111px auto 103px; }
+    margin: 99px auto 103px; }
 
   .ideas_header {
     margin-bottom: 26px;
@@ -1336,6 +1347,9 @@ table {
     font-size: 14px;
     font-family: "Roboto";
     color: #666666; }
+    .footer_item a {
+      text-decoration: none;
+      color: #666666; }
 
   .footer_partners {
     float: left;
@@ -1751,11 +1765,12 @@ table {
     text-align: center;
     margin: 0 auto; }
     .partners a {
+      display: block;
       text-decoration: none; }
 
   .partner_container {
     float: left;
-    max-width: 24%; }
+    max-width: 25%; }
 
   .other-partners {
     clear: both;
@@ -1769,7 +1784,7 @@ table {
     line-height: 1.2; }
 
   .partner_about {
-    margin: 16px 13px 52px;
+    margin: 16px 13px 41px;
     font-size: 14px;
     font-family: "Roboto";
     color: #666666;
@@ -1800,7 +1815,7 @@ table {
     width: 123px;
     height: 123px;
     border-radius: 50%;
-    background: url("../img/faces.png")-128px 0 no-repeat; }
+    background: url("../img/faces.png") -128px 0 no-repeat; }
     .partner2 .ellipse {
       display: block;
       width: 42px;
@@ -1818,7 +1833,7 @@ table {
     width: 123px;
     height: 123px;
     border-radius: 50%;
-    background: url("../img/faces.png")-257px 0 no-repeat; }
+    background: url("../img/faces.png") -257px 0 no-repeat; }
     .partner3 .ellipse {
       display: block;
       width: 42px;
@@ -1854,23 +1869,24 @@ table {
     color: #000; }
 
   .other-partners__link {
-    padding: 9px 27px;
+    padding: 9px 0px;
     text-decoration: none;
     font-size: 14px;
     font-family: "Montserrat";
     color: #ff4e50;
     font-weight: bold;
     border: 2px solid #ff4e50;
-    border-radius: 18px; }
+    border-radius: 18px;
+    max-width: 186px;
+    margin: 0 auto; }
 
   .ideas {
     text-align: center;
     margin: 0 auto;
-    margin-top: 47px;
     height: 1028px; }
 
   .ideas_header {
-    margin: 106px 0 26px -5px;
+    margin: 100px 0 26px -5px;
     font-size: 22px;
     font-family: "Montserrat";
     font-weight: bold;
@@ -2034,6 +2050,9 @@ table {
     font-size: 14px;
     font-family: "Roboto";
     color: #666666; }
+    .footer_item a {
+      text-decoration: none;
+      color: #666666; }
 
   .footer_partners {
     float: left;

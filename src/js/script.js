@@ -16,7 +16,7 @@ $(document).ready(function(){
     }
 });
 
- var $grid = $('.grid').isotope({
+  $grid = $('.grid').isotope({
  itemSelector: '.grid-item',
   // layoutMode: 'fitRows',
   // resize: false,
@@ -117,6 +117,55 @@ $grid.imagesLoaded().progress( function() {
 //       });
 //   }
       
+// crossDomainAjax('https://pixabay.com/api/?key=3246775-d5a5e1369fad91201ec99da11" + "&q=" + "beautiful+travel"+ "&per_page=7"', function (data) {
+//     if ( parseInt(data.totalHits) === 0)  {
+//                 return false;
+//               } else 
+               
+//                var gridImg = $('.grid-img');
+
+//                 for (var i = 0; i < gridImg.length; i++) {
+//                 gridImg[i].setAttribute('src', data.hits[i].webformatURL);
+//                  }
+// });
+
+// function crossDomainAjax (url, successCallback) {
+
+//     // IE8 & 9 only Cross domain JSON GET request
+//     if ('XDomainRequest' in window && window.XDomainRequest !== null) {
+
+//         var xdr = new XDomainRequest(); // Use Microsoft XDR
+//         xdr.open('get', url);
+//         xdr.onload = function () {
+//             var dom  = new ActiveXObject('Microsoft.XMLDOM'),
+//                 JSON = $.parseJSON(xdr.responseText);
+
+//             dom.async = false;
+
+//             if (JSON == null || typeof (JSON) == 'undefined') {
+//                 JSON = $.parseJSON(data.firstChild.textContent);
+//             }
+
+//             successCallback(JSON); // internal function
+//         };
+
+//         xdr.onerror = function() {
+//             _result = false;  
+//         };
+
+//         xdr.send();
+//     } 
+
+//     // IE7 and lower can't do cross domain
+//     else if (navigator.userAgent.indexOf('MSIE') != -1 &&
+//              parseInt(navigator.userAgent.match(/MSIE ([\d.]+)/)[1], 10) < 8) {
+//        return false;
+//     }    
+// };
+
+
+
+
  
       function renderList() {
       // var text = $('.search_input').val();
@@ -130,14 +179,16 @@ $grid.imagesLoaded().progress( function() {
               } else 
                
                var gridImg = $('.grid-img');
+                var gridTitles = $('.grid-text');
 
 		            for (var i = 0; i < gridImg.length; i++) {
 		            gridImg[i].setAttribute('src', data.hits[i].webformatURL);
+                 gridTitles[i].innerHTML = data.hits[i].tags;
 		       			 }
 
             }
         });
-    }
+    };
 
     $('.search_submit').on('click', function(e) {
     	
@@ -154,10 +205,12 @@ $grid.imagesLoaded().progress( function() {
               } else 
                
                var gridImg = $('.grid-img');
+                var gridTitles = $('.grid-text');
 		            for (var i = 0; i < gridImg.length; i++) {
 		            gridImg[i].setAttribute('src', data.hits[i].webformatURL);
+                  gridTitles[i].innerHTML = data.hits[i].tags;
 		       			 }
-		       			 $('.grid-text').text(text);
+		       			 // $('.grid-text').text(text);
 
             }
         });
@@ -173,13 +226,67 @@ $grid.imagesLoaded().progress( function() {
   
   
 
+ // function crossDomainAjax (url, successCallback) {
+ //    if ('XDomainRequest' in window && window.XDomainRequest !== null) {
+ //          var xdr = new XDomainRequest();
+ //          xdr.open('get', url);
+ //          xdr.onload = function () {
+ //              var dom  = new ActiveXObject('Microsoft.XMLDOM'),
+ //                  JSON = $.parseJSON(xdr.responseText);
+
+ //              dom.async = false;
+
+ //              if (JSON == null || typeof (JSON) == 'undefined') {
+ //                  JSON = $.parseJSON(data.firstChild.textContent);
+ //              }
+
+ //              successCallback(JSON);
+ //          };
+
+ //          xdr.onerror = function() {
+ //              _result = false;
+ //          };
+
+ //          xdr.send();
+ //      } else {
+ //          $.ajax({
+ //              url: url,
+ //              dataType: 'json',
+ //              async: false,
+ //              success: function (obj) {
+ //                  successCallback(obj);
+ //              }
+ //          });
+ //      }
+ //  }
 
 
-  });
+  // function getRandomImages() {
+  //   var prot = (document.all && document.querySelector && !document.addEventListener) ? 'http' : 'https';
+  //   crossDomainAjax( prot + '://pixabay.com/api/?key=3246775-d5a5e1369fad91201ec99da11&image_type=photo', function (obj) {
+  //           var gridImgs = $('.grid-img');
+  //           var gridTitles = $('.grid-text');
+  //           for (var i = 0; i < gridImgs.length; i++) {
+  //             gridImgs[i].setAttribute('src', obj.hits[i].webformatURL);
+  //             gridTitles[i].innerHTML = obj.hits[i].tags;
+  //           }
+  //         });
+  // }
+
+  // function getImages() {
+  //   var quer = $('.search_input').val();
+  //   var prot = (document.all && document.querySelector && !document.addEventListener) ? 'http' : 'https';
+  //   crossDomainAjax(prot + '://pixabay.com/api/?key=3246775-d5a5e1369fad91201ec99da11&q='+quer+'&image_type=photo', successCall);
+  // }
+
+  // getRandomImages();
+  // $('.search_submit').on('click',getImages);
 
 
 
 
+
+});
 
 
 
